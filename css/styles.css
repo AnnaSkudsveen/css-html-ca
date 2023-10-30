@@ -13,25 +13,37 @@
 }
 
 * {
+    box-sizing: border-box;
     /* font-family: 'Barlow Condensed', sans-serif; */
     /* font-family: 'Raleway', sans-serif; */
-    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* max-width: 100%; */
+    background-color: var(--cta-teriary);
+    margin: 0;s
 }
 
 h2 {
     margin: 0;
 }
 
-body {
-    background-color: var(--cta-teriary);
+p {
     margin: 0;
-    /* width: 100vw; */
-    height: 100vh;
 }
 
 nav {
     background-color: var(--primary);
     color: var(--tertiary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    height: 29px;
+    /* width: auto; */
 }
 
 .hero-banner {
