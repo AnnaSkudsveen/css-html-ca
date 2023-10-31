@@ -4,6 +4,8 @@ body {
     /* max-width: 100%; */
     background-color: var(--cta-teriary);
     margin: 0;
+    /* word-break: break-all; */
+    overflow-x: hidden;
 }
 
 h2 {

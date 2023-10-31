@@ -166,9 +166,46 @@ footer input{
 /* Small (sm) portrait tablets and large phones*/
 @media (min-width: 640px) {
     footer{
-        height: 221px;
+        height: auto;
         display: grid;
+        padding-top: 8px;
+        gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "newsletter follow-us"
+        "logo links"
+        "copyright copyright"
+        ;
     }
+
+    .footer-logo {
+        grid-area: logo;
+        margin: 0;
+    }
+
+    .footer-links {
+        grid-area: links;
+    }
+
+    .footer-newsletter {
+        grid-area: newsletter;
+    }
+
+    .footer-follow-us {
+        grid-area: follow-us;
+        gap: 12px;
+    }
+
+    .footer-follow-us ul {
+        gap: 56px;
+    }
+
+    .copyright {
+        grid-area: copyright;
+        align-items: center;
+    }
+
     .footer-logo-mobile {
         display: none;
     }
@@ -190,8 +227,16 @@ footer input{
 /* Large (lg) laptops/desktops*/
 @media (min-width: 1024px) {
     footer{
-        height: 208px;
+        height: 221px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+        "newsletter logo follow-us"
+        "newsletter logo links"
+        "copyright copyright copyright"
+        ;
     }
+
     .footer-logo-mobile {
         display: none;
     }
