@@ -1,14 +1,33 @@
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.jacket-card {
+    height: 369px;
+    width: 170px;
+
+}
+
+.products {
+    display: flex;
+}
+
+
+
+/* body {
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-template-areas: 
     "nav nav"
-    "row-1 row-1"
-    "row-2 row-2"
-    "row-3 row-3"
-    "row-4 row-4"
+    "filter filter"
+    "1 2"
+    "3 4"
+    "5 6"
+    "7 8"
     "footer footer";
 }
 
@@ -16,25 +35,93 @@ header {
     grid-area: nav;
 }
 
+.category-text {
+    grid-area: filter;
 
-
-.row-1 {
-    display: grid;
-    grid-area: row-1;
 }
 
-.row-2 {
-    grid-area: row-2;
+.products {
+    display: flex;
+    flex-direction: column;
 }
 
-.row-3 {
-    grid-area: row-3;
+.card-1 {
+    grid-area: 1;
 }
 
-.row-4 {
-    grid-area: row-4;
+.card-2 {
+    grid-area: 2;
 }
+
+.card-3 {
+    grid-area: 3;
+}
+
+.card-4 {
+    grid-area: 4;
+}
+
+.card-5 {
+    grid-area: 5;
+}
+
+.card-6 {
+    grid-area: 6;
+}
+
+.card-7 {
+    grid-area: 7;
+}
+
+.card-8 {
+    grid-area: 8;
+} */
+
+/* .card-1, .card-2, .card-3,.card-4, .card-5, .card-6, .card-7, .card-8 {
+    display: flex;
+    flex-direction: column;
+},   */
 
 footer {
     grid-area: footer;
+}
+
+/* Small (sm) portrait tablets and large phones*/
+@media (min-width: 640px) {
+body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "nav nav nav"
+    "filter filter filter"
+    "1 2 3"
+    "4 5 6"
+    "7 8 ."
+    "footer footer";
+}
+/* Medium (md) landscape tablets*/
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+}
+
+
+/* Large (lg) laptops/desktops*/
+@media (min-width: 1024px) {
+    .categories {
+        height: 640px;
+    }
+    
+    .climbing-jackets {
+        height: 503px;
+    }
+}
+
+/* Extra Large (xl) large laptops and desktops*/
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
 }
