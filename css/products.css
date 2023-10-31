@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "nav nav"
+    "row-1 row-1"
+    "row-2 row-2"
+    "row-3 row-3"
+    "row-4 row-4"
+    "footer footer";
+}
+
+header {
+    grid-area: nav;
+}
+
+
+
+.row-1 {
+    display: grid;
+    grid-area: row-1;
+}
+
+.row-2 {
+    grid-area: row-2;
+}
+
+.row-3 {
+    grid-area: row-3;
+}
+
+.row-4 {
+    grid-area: row-4;
+}
+
+footer {
+    grid-area: footer;
+}
