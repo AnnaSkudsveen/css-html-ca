@@ -1,0 +1,50 @@
+nav {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    border-radius: 24px;
+    margin: 24px 24px 0 24px;
+    padding: 8px 16px;
+}
+
+.nav-logo {
+    height: 29px;
+    /* width: auto; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+}
+
+.burger-menu {
+    display: block;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    .burger-menu {
+        display: none;
+    }
+}
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+}
