@@ -1,7 +1,8 @@
 header {
     position: sticky;
-    top: 24px;
+    top: 20px;
 }
+
 nav {
     background-color: var(--primary);
     color: var(--tertiary);
@@ -10,9 +11,12 @@ nav {
     align-items: center;
     height: 48px;
     border-radius: 24px;
-    margin: 24px 24px 0 24px;
+    margin: 20px 20px 0 20px;
     padding: 8px 16px;
-    
+}
+
+.menu-items {
+    display: none;
 }
 
 .nav-logo {
@@ -28,8 +32,62 @@ nav ul {
 }
 
 .burger-menu {
+    display: flex;
+    gap: 16px;
+}
+
+.menu {
+    display: none;
+}
+
+#menu-button:checked ~ .menu {
     display: block;
 }
+
+#menu-btn {
+    display: none;
+}
+
+/* .burger-menu {
+    display: flex;
+    gap: 16px;
+}
+
+#toggle-btn {
+    border: none;
+    background-color: transparent;
+    color: var(--tertiary);
+}
+
+#toggle-btn:hover {
+    color: var(--primary);
+    background-color: var(--tertiary);
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+.search {
+    display: none;
+}
+
+#menu {
+    display: none;
+} */
+
+a {
+    text-decoration: none;
+    color: var(--tertiary);
+    padding: 4px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--tertiary);
+    cursor: pointer;
+    border-radius: 13px;
+}
+
 
 /* Small (sm) */
 @media (min-width: 640px) {
@@ -37,13 +95,32 @@ nav ul {
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
-    .burger-menu {
+    /* .burger-menu {
         display: none;
+    } */
+
+    .menu-icon {
+        display: none;
+    }
+
+    .search {
+        display: block;
+    }
+
+    .menu-items {
+        display: flex;
+    }
+
+    nav {
+        margin: 24px 24px 0 24px;
     }
 }
 /* Large (lg) */
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
+    nav {
+        margin: 24px 70px 0 70px;
+    }
 }
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
