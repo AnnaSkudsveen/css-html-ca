@@ -78,6 +78,7 @@ button:hover, button:focus {
         display: none;
 
     }
+
 }
 /* Medium (md) */
 @media (min-width: 768px) {
@@ -100,10 +101,41 @@ button:hover, button:focus {
         display: block;
         margin: auto;
     }
+
+    body {
+        position: relative;
+    }
+
+    form {
+        background-color: var(--primary);
+        border-radius: var(--border-radius);
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 192px;
+        right: 40px;
+    }
+
+    h1 {
+        color: var(--white);
+        margin: 0;
+    }
+    
+    button {
+        margin: 0;
+    }
+
 }
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
+    form {
+        background-color: var(--primary);
+        border-radius: var(--border-radius);
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 192px;
+        right: 178px;
+    }
 }
 /* 2XL (2xl) */
 @media (min-width: 1536px) {

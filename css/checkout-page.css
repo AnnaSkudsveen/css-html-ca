@@ -1,0 +1,86 @@
+.carousel .cards{
+    display: flex;
+}
+
+.carousel-card-3, .carousel-card-4, .carousel-card-5, .carousel-card-6 {
+    display: none;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.shopping-cart {
+    grid-area: cart;
+}
+
+.carousel {
+    grid-area: carousel;
+}
+
+.payment{
+    grid-area: payment;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+    .carousel-card-3 {
+        display: block;
+    }
+    .carousel-card-4, .carousel-card-5, .carousel-card-6 {
+        display: none;
+    }
+
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: auto;
+        grid-template-areas: 
+        "nav nav"
+        "cart payment"
+        "carousel carousel"
+        "footer footer"
+        ;
+    }
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+    .carousel-card-4{
+        display: block;
+    }
+
+    .carousel-card-5, .carousel-card-6 {
+        display: none;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    .carousel-card-5 {
+        display: block;
+    }
+
+    .carousel-card-6 {
+        display: none;
+    }
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+    .carousel-card-6 {
+        display: block;
+    }
+}

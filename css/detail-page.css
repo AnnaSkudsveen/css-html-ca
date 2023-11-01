@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    padding: none;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--blackish);
+}
+
+.carousel .cards{
+    display: flex;
+}
+
+.card-3, .card-4, .card-5, .card-6 {
+    display: none;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+    .card-3 {
+        display: block;
+    }
+    .card-4, .card-5, .card-6 {
+        display: none;
+    }
+
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-4{
+        display: block;
+    }
+
+    .card-5, .card-6 {
+        display: none;
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    .card-5 {
+        display: block;
+    }
+
+    .card-6 {
+        display: none;
+    }
+}
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+    .card-6 {
+        display: block;
+    }
+}
