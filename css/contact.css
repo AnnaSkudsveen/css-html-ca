@@ -1,0 +1,143 @@
+.hero-banner-contact-mobile {
+    display: block;
+    margin: auto;
+} 
+
+.hero-banner-contact-tablet {
+    display: none;
+}
+
+.hero-banner-contact-desktop {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    margin: auto;
+}
+
+h1 {
+    font-family: var(--heading);
+    align-self: center;
+}
+
+form input, form select, form textarea {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    border-radius: var(--border-radius);
+    border: none;
+    margin: 4px;
+    padding: 10px 24px;
+}
+
+form input, form select {
+    height: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    height: 40px;
+    width: 171px;
+    background-color: var(--cta-primary);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    border: none;
+    font-family: var(--heading);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+    align-self: flex-end;
+    margin-bottom: 24px;
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+    background-color: var(--tertiary);
+}
+
+
+
+/* Small (sm) */
+@media (min-width: 640px) {
+    .hero-banner-contact-mobile {
+        display: none;
+        margin: 0;
+    } 
+    
+    .hero-banner-contact-tablet {
+        display: block;
+        margin: auto;
+    }
+    
+    .hero-banner-contact-desktop {
+        display: none;
+
+    }
+
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+}
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+    .hero-banner-contact-mobile {
+        display: none;
+        margin: 0;
+    } 
+    
+    .hero-banner-contact-tablet {
+        display: none;
+        margin: 0;
+    }
+    
+    .hero-banner-contact-desktop {
+        display: block;
+        margin: auto;
+    }
+
+    body {
+        position: relative;
+    }
+
+    form {
+        background-color: var(--primary);
+        border-radius: var(--border-radius);
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 192px;
+        right: 40px;
+    }
+
+    h1 {
+        color: var(--white);
+        margin: 0;
+    }
+    
+    button {
+        margin: 0;
+    }
+
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    form {
+        background-color: var(--primary);
+        border-radius: var(--border-radius);
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 192px;
+        right: 178px;
+    }
+}
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+}

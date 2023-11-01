@@ -1,29 +1,11 @@
-:root {
-    --primary: #274C77;
-    --secondary: #6096BA;
-    --tertiary: #C4D7E4;
-    --cta-primary: #BA5C12;
-    --cta-secondary: #EEAB77;
-    --cta-teriary: #FBDFCA;
-    --blackish: #1F2327;
-    --grey: #777777;
-    --light-grey: #E7ECEF;
-    --white: #FFFFFF;
-    --border-radius: 20px;
-}
-
-* {
-    box-sizing: border-box;
-    /* font-family: 'Barlow Condensed', sans-serif; */
-    /* font-family: 'Raleway', sans-serif; */
-}
-
 body {
     height: 100vh;
     width: 100vw;
     /* max-width: 100%; */
     background-color: var(--cta-teriary);
-    margin: 0;s
+    margin: 0;
+    /* word-break: break-all; */
+    overflow-x: hidden;
 }
 
 h2 {
@@ -32,18 +14,6 @@ h2 {
 
 p {
     margin: 0;
-}
-
-nav {
-    background-color: var(--primary);
-    color: var(--tertiary);
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-logo {
-    height: 29px;
-    /* width: auto; */
 }
 
 .hero-banner {
@@ -66,10 +36,7 @@ nav {
     height: 657px;
 }
 
-footer{
-    background-color: var(--primary);
-    height: 495px;
-}
+
 
 /* Small (sm) portrait tablets and large phones*/
 @media (min-width: 640px) {
@@ -79,10 +46,6 @@ footer{
     
     .climbing-jackets {
         height: 500px;
-    }
-    
-    footer{
-        height: 221px;
     }
 }
 /* Medium (md) landscape tablets*/
@@ -98,10 +61,6 @@ footer{
     
     .climbing-jackets {
         height: 503px;
-    }
-    
-    footer{
-        height: 208px;
     }
 }
 
