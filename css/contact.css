@@ -16,11 +16,16 @@ form {
     flex-direction: column;
     max-width: 360px;
     margin: auto;
+    
 }
 
 h1 {
     font-family: var(--heading);
     align-self: center;
+}
+
+label {
+    display: none;
 }
 
 form input, form select, form textarea {
@@ -113,6 +118,7 @@ button:hover, button:focus {
         position: absolute;
         top: 192px;
         right: 40px;
+        z-index: 5;
     }
 
     h1 {

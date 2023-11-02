@@ -24,72 +24,28 @@
 <body>
     <header>
         <nav>
-            <ul class="menu-items">
-                <li><a href="/products.html">Men</a></li>
-                <li><a href="/products.html">Women</a></li>
-                <li><a href="">Kids</a></li>
-                <li><a href="">Jackets</a></li>
-                <li><a href="">Pants</a></li>
-                <li><a href="">Accessories</a></li>
-            </ul>
-
-            <section>
-                <div class="burger-menu">
-                    <input type="checkbox" class="menu-btn"
-                    id="menu-btn"
-                    name="menu-btn">
-                    <label for="menu-btn" class="menu-icon">Menu
-                    </label>
-                    <p>
-                        <i class="fa-solid fa-magnifying-glass"></i> 
-                    </p> 
-                </div>
-                
-                <div class="menu">
-                    <a href="/products.html" class="menu-item">Men</a>
-                    <a href="/products.html" class="menu-item">Women</a>
-                    <a href="#" class="menu-item">Kids</a>
-                    <a href="#" class="menu-item">Jackets</a>
-                    <a href="#" class="menu-item">Pants</a>
-                    <a href="#" class="menu-item">Accessories</a>
-                    
-                </div>
-            </section>
-
-            <!-- <div>
-                <div class="burger-menu">
-                    <button id="toggle-btn">Menu</button>
-
-                    <p>
-                        <i class="fa-solid fa-magnifying-glass"></i> 
-                    </p>  
-                </div>
-        
-                <div id="menu">
-                    <ul>
-                        <li><a href="/products.html">Men</a></li>
-                        <li><a href="/products.html">Women</a></li>
-                        <li><a href="">Kids</a></li>
-                        <li><a href="">Jackets</a></li>
-                        <li><a href="">Pants</a></li>
-                        <li><a href="">Accessories</a></li>
-                    </ul>
-                </div>
-            </div> -->
-
-            <!-- <script>
-                document.getElementById("toggleBtn").addEventListener("click", function() {
-                let menu = document.getElementById("menu");
-
-                    if (menu.style.display === "none" || menu.style.display === "") {
-                        menu.style.display = "block";
-                    } else {
-                        menu.style.display = "none"
-                    }
-                });
-            </script> -->
+                <input type="checkbox" id="menu-btn" class="menu-btn">
+                <label for="menu-btn" class="menu">
+                Menu
+                </label>
             
-            <ul>
+            <ul class="menu-items">
+                <li class="menu-item"><a href="/products.html">Men</a></li>
+                <li class="menu-item"><a href="/products.html">Women</a></li>
+                <li class="menu-item"><a href="#">Kids</a></li>
+                <li class="menu-item"><a href="/about-us.html">About us</a></li>
+                <li class="menu-item"><a href="/contact.html">Contact</a></li>
+            </ul>
+            
+            <ul class="menu-items-large">
+                <li class="menu-item-large"><a href="/products.html">Men</a></li>
+                <li class="menu-item-large"><a href="/products.html">Women</a></li>
+                <li class="menu-item-large"><a href="#">Kids</a></li>
+                <li class="menu-item-large"><a href="/about-us.html">About us</a></li>
+                <li class="menu-item-large"><a href="/contact.html">Contact</a></li>
+            </ul>
+    
+            <ul class="logo">
                 <li>
                     <a href="/index.html">
                         <svg width="66" height="29" viewBox="0 0 66 29" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -106,10 +62,10 @@
                     </a>
                 </li>
             </ul>
-            <ul>
+            <ul class="icons">
                 <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
                 <li><a href=""><i class="fa-regular fa-user"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="/checkout-page.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <li class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
         </nav>

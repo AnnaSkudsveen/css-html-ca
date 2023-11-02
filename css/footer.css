@@ -161,6 +161,7 @@ footer input{
     display: flex;
     justify-content: center;
     padding-bottom: 16px;
+    margin: 0;
 }
 
 /* Small (sm) portrait tablets and large phones*/
