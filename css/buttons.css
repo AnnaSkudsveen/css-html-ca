@@ -1,0 +1,14 @@
+button {
+    height: 32px;
+    width: 170px;
+    color: var(--white);
+    background-color: var(--cta-primary);
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover, button:focus {
+    background-color: var(--primary);
+    cursor: pointer;
+}
