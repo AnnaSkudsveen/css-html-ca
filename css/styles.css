@@ -30,35 +30,24 @@ p {
     max-height: 569px;
 }
 
-.hero-banner-btns {
+.hero-banner-btns, .hero-banner h2 {
     position: relative;
     top: 83px;
     left: 35px;
 }
 
-.hero-banner-btns button {
+.hero-banner-btns {
+    display: flex;
     margin-right: 20px;
+    gap: 20px;
 }
-
-
-/* .hero-banner img {
-    object-fit: cover;
-    object-position: bottom;
-} */
 
 .hero-banner-image-tablet, .hero-banner-image-desktop {
     display: none;
-
 }
 
-.popular-now {
-    height: auto;
-    padding-left: 35px;
-    display: flex;
-}
-
-.popular-now .product-image {
-    height: 168px;
+.popular-now-heading {
+    padding: 20px;
 }
 
 .categories {
@@ -88,16 +77,30 @@ p {
 
 }
 
-
 .city-jackets, .hiking, .canoeing {
     display: none;
 }
 
 .climbing-jackets {
-    background-color: var(--white);
+    background-image: url(/assets/home/mobile/climbing-jackets-banner-mobile.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 569px;
     height: 657px;
 }
 
+.climbing-jackets h2 {
+    color: var(--white);
+    padding: 20px;
+}
+
+.climbing-jackets-btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 24px;
+}
 
 
 /* Small (sm) portrait tablets and large phones*/
@@ -121,11 +124,16 @@ p {
 
     .canoeing {
         display: block;
-    }    
+    }   
+    
+    .climbing-jackets {
+        background-image: url(/assets/home/tablet/climbing-jackets-banner-tablet.jpg);
+    }
 }
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
+
 }
 
 /* Large (lg) laptops/desktops*/
@@ -151,8 +159,16 @@ p {
         display: block;
     }
 
-    .hero-banner-btns {
+    .hero-banner-btns, .hero-banner h2 {
         left: 70px;
+    }
+
+    .climbing-jackets {
+        background-image: url(/assets/home/desktop/climbing-jackets-banner-desktop.jpg);
+    }
+
+    .climbing-jackets-btns {
+        padding-left: 70px;
     }
 }
 
