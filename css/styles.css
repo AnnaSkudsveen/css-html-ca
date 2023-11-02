@@ -10,6 +10,10 @@ body {
 
 h2 {
     margin: 0;
+    font-family: var(--heading);
+    font-size: 32px;
+    letter-spacing: 3.52px;
+
 }
 
 p {
@@ -17,18 +21,76 @@ p {
 }
 
 .hero-banner {
-    background-color: var(--secondary);
     height: 570px;
+    width: 100vw;
+    background-image: url(/assets/home/mobile/hero-banner-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 569px;
+}
+
+.hero-banner-btns {
+    position: relative;
+    top: 83px;
+    left: 35px;
+}
+
+.hero-banner-btns button {
+    margin-right: 20px;
+}
+
+
+/* .hero-banner img {
+    object-fit: cover;
+    object-position: bottom;
+} */
+
+.hero-banner-image-tablet, .hero-banner-image-desktop {
+    display: none;
+
 }
 
 .popular-now {
-    background-color: var(--cta-secondary);
-    height: 463px;
+    height: auto;
+    padding-left: 35px;
+    display: flex;
+}
+
+.popular-now .product-image {
+    height: 168px;
 }
 
 .categories {
-    background-color: var(--tertiary);
     height: 596px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+}
+
+
+.categories-links h2 {
+    position: relative;
+    bottom: 58px;
+    left: 24px;
+    color: var(--white);
+    letter-spacing: 3.52px;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--heading);
+    text-transform: capitalize;
+
+}
+
+
+.city-jackets, .hiking, .canoeing {
+    display: none;
 }
 
 .climbing-jackets {
@@ -47,6 +109,19 @@ p {
     .climbing-jackets {
         height: 500px;
     }
+
+    .hero-banner {
+        height: 570px;
+        width: 100vw;
+        background-image: url(/assets/home/tablet/hero-banner-tablet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .canoeing {
+        display: block;
+    }    
 }
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
@@ -62,11 +137,31 @@ p {
     .climbing-jackets {
         height: 503px;
     }
+
+    .hero-banner {
+        height: 570px;
+        width: 100vw;
+        background-image: url(/assets/home/desktop/hero-banner-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hiking {
+        display: block;
+    }
+
+    .hero-banner-btns {
+        left: 70px;
+    }
 }
 
 /* Extra Large (xl) large laptops and desktops*/
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
+    .city-jackets {
+        display: block;
+    }
 }
 
 /* 2XL (2xl) */
