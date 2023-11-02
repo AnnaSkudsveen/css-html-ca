@@ -50,6 +50,17 @@ p {
     padding: 20px;
 }
 
+.jacket-card-1, .jacket-card-2, .jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* margin: 20px; */
+}
+
+.jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
+    display: none;
+}
+
 .categories {
     height: 596px;
     display: flex;
@@ -133,7 +144,9 @@ p {
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
-
+    .jacket-card-3 {
+        display: flex;
+    }
 }
 
 /* Large (lg) laptops/desktops*/
@@ -163,6 +176,10 @@ p {
         left: 70px;
     }
 
+    .jacket-card-4 {
+        display: flex;
+    }
+
     .climbing-jackets {
         background-image: url(/assets/home/desktop/climbing-jackets-banner-desktop.jpg);
     }
@@ -177,6 +194,10 @@ p {
     /* Your styles for the extra large breakpoint here */
     .city-jackets {
         display: block;
+    }
+
+    .jacket-card-5, .jacket-card-6 {
+        display: flex;
     }
 }
 
