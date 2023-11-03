@@ -1,25 +1,69 @@
-.carousel .cards{
-    display: flex;
-}
-
-.carousel-card-3, .carousel-card-4, .carousel-card-5, .carousel-card-6 {
-    display: none;
-}
-
 nav {
     grid-area: nav;
+}
+
+h1, h2, h3, p {
+    margin: 0;
 }
 
 .shopping-cart {
     grid-area: cart;
 }
 
-.carousel {
+.cart-card {
+    border-bottom: 1px solid var(--blackish);
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.cart-card img {
+    height: 168px;
+}
+
+.add-more button {
+    height: 16px;
+    width: 16px;
+    border-radius: ;
+}
+
+.fake-carousel-container {
     grid-area: carousel;
 }
 
 .payment{
     grid-area: payment;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px; 
+}
+
+form input {
+    background-color: var(--tertiary);
+    height: 40px;
+    max-width: 360px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 16px;
+}
+
+form .purchase-button {
+    height: 40px;
+    width: 360px;
+}
+
+.jacket-card-1, .jacket-card-2, .jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* margin: 20px; */
+}
+
+.jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
+    display: none;
 }
 
 footer {
@@ -51,36 +95,30 @@ footer {
         "footer footer"
         ;
     }
+
+    .jacket-card-3 {
+        display: flex;
+    }
 }
 
 /* Large (lg) */
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
-    .carousel-card-4{
-        display: block;
-    }
-
-    .carousel-card-5, .carousel-card-6 {
-        display: none;
+    .jacket-card-4 {
+        display: flex;
     }
 }
 
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
-    .carousel-card-5 {
-        display: block;
-    }
-
-    .carousel-card-6 {
-        display: none;
+    .jacket-card-5, .jacket-card-6 {
+        display: flex;
     }
 }
 
 /* 2XL (2xl) */
 @media (min-width: 1536px) {
     /* Your styles for the 2XL breakpoint here */
-    .carousel-card-6 {
-        display: block;
-    }
+
 }
