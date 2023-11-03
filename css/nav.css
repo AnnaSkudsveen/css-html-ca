@@ -8,14 +8,12 @@ nav {
     display: grid;
     margin: 20px 20px 0 20px;
     height: 48px;
+    width: auto;
     background-color: var(--primary);
     color: var(--tertiary);
-    /* padding: 8px 16px; */
     border-radius: 24px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr auto;
-
-    /* justify-content: space-between; */
     align-items: center;
     grid-template-areas: 
     "menu-btn logo icons"
@@ -97,7 +95,7 @@ nav a {
     grid-area: icons;
     display: flex;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 8px;
     margin: 0;
     padding: 0;
     padding-right: 16px;
@@ -115,6 +113,10 @@ nav a {
     /* Your styles for the medium breakpoint here */
     nav {
         margin: 24px 24px 0 24px;
+    }
+
+    .icons {
+        gap: 16px;
     }
 
 
