@@ -24,7 +24,41 @@ header nav {
 
 .category-text {
     grid-area: filter;
+    display: flex;
+    flex-direction: column;
+}
 
+h1 {
+    letter-spacing: 3.52;
+    margin: 40px 0 8px 20px;
+}
+
+.all-jackets {
+    font-weight: normal;
+    font-size: 30px;
+    padding-left: 8px;
+}
+
+.filter {
+    background-color: var(--cta-tertiary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+    height: 32px;
+}
+
+.breadcrumbs {
+    display: flex;
+    color: var(--grey);
+    font-size: 12px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.breadcrumbs a {
+    color: var(--grey);
+    text-decoration: none;
 }
 
 .jacket-card .card-1 {
@@ -72,6 +106,20 @@ header nav {
     "7 8 ."
     "footer footer footer";
 }
+
+h1 {
+    margin: 40px 0 8px 35px;
+}
+
+.filter {
+    padding: 0 80px;
+}
+
+.breadcrumbs {
+    margin-left: 35px;
+}
+    
+}
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
@@ -92,6 +140,18 @@ header nav {
         "footer footer footer footer";
     }
 
+    h1 {
+        margin: 40px 0 8px 70px;
+    }
+
+    .filter {
+        padding: 0 100px;
+
+    }
+
+    .breadcrumbs {
+        margin-left: 70px;
+    }
 }
 
 /* Extra Large (xl) large laptops and desktops*/

@@ -1,6 +1,6 @@
 button {
     height: 32px;
-    width: 170px;
+    min-width: 100px;
     color: var(--white);
     background-color: var(--cta-primary);
     border-radius: var(--border-radius);
