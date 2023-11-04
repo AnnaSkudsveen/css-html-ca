@@ -6,9 +6,10 @@ h1, h2, h3, p {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .payment-in-cart, .payment-total, .purchase-button {
     font-family: var(--heading);
     font-weight: 600;
+
 }
 
 .shopping-cart {
@@ -58,12 +59,47 @@ h1, h2, h3 {
     padding-bottom: 8px;
 }
 
+.continue-shopping h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
 .fake-carousel-container {
     grid-area: carousel;
 }
 
-.payment{
+.payment-summary {
     grid-area: payment;
+    max-width: 360px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.summary {
+    margin: 8px 0;
+}
+
+.payment-total, .payment-delivery, .payment-in-cart {
+    display: flex;
+    justify-content: space-between
+}
+
+.payment-options {
+    max-width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-option {
+    background-color: var(--tertiary);
+    border-radius: 8px;
+    height: 35px;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form {
@@ -84,7 +120,9 @@ form input {
 
 form .purchase-button {
     height: 40px;
-    width: 360px;
+    max-width: 360px;
+    font-size: 20px;
+    letter-spacing: 2.2px;
 }
 
 .jacket-card-1, .jacket-card-2, .jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
