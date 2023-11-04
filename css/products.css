@@ -4,7 +4,7 @@ body {
 
 .products {
     display: grid;
-    margin: 20px;
+    margin-left: 8px;
     gap: 8px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
@@ -93,11 +93,16 @@ h1 {
     grid-area: 8;
 }
 
+.jacket-card button {
+    width: 100px;
+}
+
 /* Small (sm) portrait tablets and large phones*/
 @media (min-width: 640px) {
 .products {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 1fr);
+    margin-left: 16px;
     gap: 16px;
     grid-template-areas: 
     "nav nav nav"
@@ -124,6 +129,9 @@ h1 {
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
+    .products {
+        margin-left: 20px;
+    }
 }
 
 
@@ -133,6 +141,7 @@ h1 {
         margin: 70px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(auto, 1fr);
+        margin-left: 36px;
         gap: 20px;
         grid-template-areas: 
         "nav nav nav nav"
@@ -159,6 +168,9 @@ h1 {
 /* Extra Large (xl) large laptops and desktops*/
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
+    .products {
+        margin-left: 70px;
+    }
 }
 
 /* 2XL (2xl) */

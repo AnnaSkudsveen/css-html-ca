@@ -90,6 +90,7 @@ h1, h2, h3, .payment-in-cart, .payment-total, .purchase-button {
     max-width: 360px;
     display: flex;
     justify-content: space-between;
+    gap: 8px;
 }
 
 .payment-option {
