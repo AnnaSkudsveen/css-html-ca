@@ -30,6 +30,10 @@
     margin: 0;
 }
 
+.fake-carousel button {
+    width: 130px;
+}
+
 .product-image {
     display: flex;
     height: 135px;
