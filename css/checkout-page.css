@@ -6,6 +6,11 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+h1, h2, h3 {
+    font-family: var(--heading);
+    font-weight: 600;
+}
+
 .shopping-cart {
     grid-area: cart;
 }
@@ -13,17 +18,44 @@ h1, h2, h3, p {
 .cart-card {
     border-bottom: 1px solid var(--blackish);
     display: flex;
+    gap: 8px;
     /* flex-direction: column; */
 }
 
 .cart-card img {
     height: 168px;
+    margin: auto;
+}
+
+.cart-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 8px;
+}
+
+.add-more {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .add-more button {
     height: 16px;
     width: 16px;
-    border-radius: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue-shopping {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--blackish);
+    padding-bottom: 8px;
 }
 
 .fake-carousel-container {

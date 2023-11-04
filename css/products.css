@@ -5,7 +5,7 @@ body {
 .products {
     display: grid;
     margin: 20px;
-    gap: 20px;
+    gap: 8px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     grid-template-areas: 
@@ -98,6 +98,7 @@ h1 {
 .products {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 1fr);
+    gap: 16px;
     grid-template-areas: 
     "nav nav nav"
     "filter filter filter"
@@ -132,6 +133,7 @@ h1 {
         margin: 70px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(auto, 1fr);
+        gap: 20px;
         grid-template-areas: 
         "nav nav nav nav"
         "filter filter filter filter"

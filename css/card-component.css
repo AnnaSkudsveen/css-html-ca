@@ -2,13 +2,12 @@
     height: auto;
     margin: auto;
     display: flex;
-    gap: 20px;
+    gap: 16px;
     margin-bottom: 16px;
-
 }
 
 .jacket-card {
-    max-width: 250px
+    max-width: 240px
 }
 
 .fake-carousel h3, .fake-carousel h4 {
@@ -32,7 +31,8 @@
 }
 
 .product-image {
-    max-height: 168px;
+    display: flex;
+    height: 135px;
     object-fit: contain;
     margin: auto;
 }
@@ -83,16 +83,24 @@
         padding-left: 35px;
         padding-right: 35px;
     }
+
+    .product-image {
+        height: 150px;
+    }
 }
 /* Large (lg) */
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
-    
+    .product-image {
+        height: 160px;
+    }
 }
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
-    
+    .product-image {
+        height: 168px;
+    }
 }
 /* 2XL (2xl) */
 @media (min-width: 1536px) {

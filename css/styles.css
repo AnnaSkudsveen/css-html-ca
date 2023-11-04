@@ -36,6 +36,10 @@ p {
     left: 35px;
 }
 
+.hero-banner-btns button, .climbing-jackets-btns button {
+    width: 100px;
+}
+
 .hero-banner-btns {
     display: flex;
     margin-right: 20px;
