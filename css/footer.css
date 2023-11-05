@@ -226,6 +226,9 @@ footer input{
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
+    footer input {
+        width: 227px;
+    }
 }
 
 /* Large (lg) laptops/desktops*/
