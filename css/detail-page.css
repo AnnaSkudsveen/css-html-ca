@@ -98,7 +98,6 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /* margin: 20px; */
 }
 
 .jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
@@ -127,7 +126,6 @@ h1 {
         margin-right: 35px;
     }
 }
-
 
 /* Large (lg) */
 @media (min-width: 1024px) {

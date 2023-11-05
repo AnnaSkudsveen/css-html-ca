@@ -75,11 +75,6 @@
     background-color: #C4D7E4;
 }
 
-/* Small (sm) */
-@media (min-width: 640px) {
-
-}
-
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
@@ -92,6 +87,7 @@
         height: 150px;
     }
 }
+
 /* Large (lg) */
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
@@ -99,14 +95,11 @@
         height: 160px;
     }
 }
+
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
     .product-image {
         height: 168px;
     }
-}
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
 }

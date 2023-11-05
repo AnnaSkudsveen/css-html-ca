@@ -50,7 +50,6 @@ footer input{
     color: var(--primary);
     border: none;
     padding: 8px 16px;
-    /* margin: 8px ; */
 }
 
 .newsletter-form {
@@ -221,11 +220,13 @@ footer input{
     .footer-logo-desktop {
         display: none;
     }
-    
 }
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
+    footer input {
+        width: 227px;
+    }
 }
 
 /* Large (lg) laptops/desktops*/
@@ -252,5 +253,4 @@ footer input{
     .footer-logo-desktop {
         display: block;
     }
-    
 }

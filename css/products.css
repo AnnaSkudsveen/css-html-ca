@@ -99,33 +99,33 @@ h1 {
 
 /* Small (sm) portrait tablets and large phones*/
 @media (min-width: 640px) {
-.products {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    margin-left: 16px;
-    gap: 16px;
-    grid-template-areas: 
-    "nav nav nav"
-    "filter filter filter"
-    "1 2 3"
-    "4 5 6"
-    "7 8 ."
-    "footer footer footer";
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        margin-left: 16px;
+        gap: 16px;
+        grid-template-areas: 
+        "nav nav nav"
+        "filter filter filter"
+        "1 2 3"
+        "4 5 6"
+        "7 8 ."
+        "footer footer footer";
+    }
+
+    h1 {
+        margin: 40px 0 8px 35px;
+    }
+
+    .filter {
+        padding: 0 80px;
+    }
+
+    .breadcrumbs {
+        margin-left: 35px;
+    }  
 }
 
-h1 {
-    margin: 40px 0 8px 35px;
-}
-
-.filter {
-    padding: 0 80px;
-}
-
-.breadcrumbs {
-    margin-left: 35px;
-}
-    
-}
 /* Medium (md) landscape tablets*/
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
@@ -133,7 +133,6 @@ h1 {
         margin-left: 20px;
     }
 }
-
 
 /* Large (lg) laptops/desktops*/
 @media (min-width: 1024px) {
@@ -171,9 +170,4 @@ h1 {
     .products {
         margin-left: 70px;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
 }

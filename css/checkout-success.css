@@ -32,7 +32,6 @@ h1 {
     display: flex;
     gap: 8px;
     margin-bottom: 16px;
-    /* flex-direction: column; */
 }
 
 .cart-card img {
@@ -137,13 +136,11 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /* margin: 20px; */
 }
 
 .jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
     display: none;
 }
-
 
 /* Small (sm) */
 @media (min-width: 640px) {
@@ -196,7 +193,6 @@ footer {
     .jacket-card-4 {
         display: flex;
     }
-
 }
 
 /* Extra Large (xl) */
@@ -209,10 +205,4 @@ footer {
     .shopping-cart, .others-bought {
         margin-left: 70px;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }
