@@ -13,7 +13,7 @@ footer{
     position: relative;
 }
 
-h1, h2, h3, .join {
+h1, h2, h3,h4, .join {
     font-family: var(--heading);
     font-weight: 600;
 }

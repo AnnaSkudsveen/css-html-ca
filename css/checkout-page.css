@@ -1,3 +1,7 @@
+main {
+    margin: 8px;
+}
+
 nav {
     grid-area: nav;
 }
@@ -10,6 +14,10 @@ h1, h2, h3, .payment-in-cart, .payment-total, .purchase-button {
     font-family: var(--heading);
     font-weight: 600;
 
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 .shopping-cart {
@@ -143,19 +151,24 @@ footer {
 
 /* Small (sm) */
 @media (min-width: 640px) {
+    main {
+        margin: 16px;
+    }
+    
     .carousel-card-3 {
         display: block;
     }
+
     .carousel-card-4, .carousel-card-5, .carousel-card-6 {
         display: none;
     }
-
 }
 
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
     main {
+        margin: 35px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: auto;
@@ -175,6 +188,10 @@ footer {
 /* Large (lg) */
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
+    main {
+        margin: 70px;
+    }
+
     .jacket-card-4 {
         display: flex;
     }
@@ -186,10 +203,4 @@ footer {
     .jacket-card-5, .jacket-card-6 {
         display: flex;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }
