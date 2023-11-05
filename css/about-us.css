@@ -64,6 +64,7 @@ h1 {
         padding: 16px;
     }
 }
+
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
@@ -78,6 +79,7 @@ h1 {
         color: var(--white);
     }
 }
+
 /* Large (lg) */
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
@@ -94,6 +96,7 @@ h1 {
         height: 641px
     }
 }
+
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
