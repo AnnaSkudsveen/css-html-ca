@@ -28,7 +28,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 569px;
-    position: ;
+    position: relative;
+    bottom: 71px;
 }
 
 .hero-banner-btns, .hero-banner h2 {
