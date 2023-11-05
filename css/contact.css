@@ -16,7 +16,6 @@ form {
     flex-direction: column;
     max-width: 360px;
     margin: auto;
-    
 }
 
 h1 {
@@ -65,8 +64,6 @@ button:hover, button:focus {
     background-color: var(--tertiary);
 }
 
-
-
 /* Small (sm) */
 @media (min-width: 640px) {
     .hero-banner-contact-mobile {
@@ -83,12 +80,8 @@ button:hover, button:focus {
         display: none;
 
     }
+}
 
-}
-/* Medium (md) */
-@media (min-width: 768px) {
-    /* Your styles for the medium breakpoint here */
-}
 /* Large (lg) */
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
@@ -129,8 +122,8 @@ button:hover, button:focus {
     button {
         margin: 0;
     }
-
 }
+
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
@@ -142,8 +135,4 @@ button:hover, button:focus {
         top: 192px;
         right: 178px;
     }
-}
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
 }

@@ -119,7 +119,6 @@ p {
     padding-left: 24px;
 }
 
-
 /* Small (sm) portrait tablets and large phones*/
 @media (min-width: 640px) {
     .categories {
