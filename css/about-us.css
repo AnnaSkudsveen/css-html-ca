@@ -1,0 +1,111 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+}
+
+.header {
+    position: absolute;
+    top: 8px;
+    z-index: 20;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.header p {
+    margin: 8px 0 0 0;
+} 
+
+.founding-years .section-text {
+    padding-top: 80px;
+}
+
+.section-text {
+    position: absolute;
+    bottom: 200px;
+    width: 100vw;
+    height: 958px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+.founding-years img, .expanding-product-line img, .retail-opening img, .sustainable-initiatives img, .e-commerce img, .technical-innovation img, .community-engagement img, .sustainable-future img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.founding-years, .expanding-product-line, .retail-opening, .sustainable-initiatives, .e-commerce, .technical-innovation, .community-engagement, .sustainable-future {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    color: var(--white);
+    position: relative;
+    
+}
+
+.img-desktop {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .section-text {
+        padding: 16px;
+    }
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    .section-text {
+        padding: 20px;
+    }
+
+    .header {
+        position: absolute;
+        top: 8px;
+        z-index: 20;
+        color: var(--white);
+    }
+}
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+    .img-desktop {
+        display: block;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .section-text {
+        padding: 35px;
+        height: 641px
+    }
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    .section-text {
+        padding: 70px;
+        height: 1200px;
+    }
+}
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+    .sustainable-future .section-text {
+        height: 852px;
+    }
+}
