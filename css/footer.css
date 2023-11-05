@@ -1,6 +1,7 @@
 footer{
     display: grid;
     background-color: var(--primary);
+    width: 100vw;
     height: auto;
     color: var(--white);
     flex-direction: column;
@@ -8,9 +9,11 @@ footer{
     align-items: center;
     padding-top: 16px;
     gap: 24px;
+    z-index: 100;
+    position: relative;
 }
 
-h1, h2, h3, .join {
+h1, h2, h3,h4, .join {
     font-family: var(--heading);
     font-weight: 600;
 }
@@ -42,7 +45,7 @@ footer label{
 footer input{
     height: 40px;
     border-radius: var(--border-radius);
-    width: 227px;
+    max-width: 227px;
     background-color: var(--tertiary);
     color: var(--primary);
     border: none;
@@ -60,7 +63,7 @@ footer input{
     font-size: 14px;
 }
 
-.join {
+.newsletter-form .join {
     display: flex;
     width: 75px;
     height: 40px;

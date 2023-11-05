@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/card-component.css">
+    <link rel="stylesheet" href="css/buttons.css">
     <script src="https://kit.fontawesome.com/5ba45fa1e0.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png"/>
@@ -80,44 +82,54 @@
             <h1>Thank you for your order!</h1>
         </section>
 
-        <section class="product">
-            <h1>Shopping cart</h1>
-            <div class="product-card-1">
-                <img src="#" alt="">
-                <h2 class="card-header">FleeceYouUp</h2>
-                <p>This fleece will keep you warm when its freezing</p>
-                <p>Nok 1500,-</p>
-                <div>
-                    circle 
-                    <p>010 - Army green</p>
-                </div>
-                <div>
-                    <h3>Total 1500,-</h3>
+        <section class="shopping-cart">
+            <h2>Shopping cart</h2>
+            <div class="cart-card">
+                <img src="assets/products/resized/RainyDays-7.jpg" alt="">
+                <div class="cart-card-info">
+                    <h3 class="card-header">FleeceYouUp</h3>
+                    <p>
+                        This fleece will keep you warm when its freezing
+                    </p>
+                    <p>Nok 1500,-</p>
+                    <div>
+                        <div class="circle circle-1"></div> 
+                        <p>010 - Army green</p>
+                    </div>
+                    <div class="add-more">
+                        <h4>Total 1500,-</h4>
+                    </div>
                 </div>
             </div>
-            <div class="product-card-2">
-                <img src="#" alt="">
-                <h2 class="card-header">FleeceYouUp</h2>
-                <p>This fleece will keep you warm when its freezing</p>
-                <p>Nok 1500,-</p>
-                <div>
-                    circle 
-                    <p>010 - Army green</p>
-                </div>
-                <div>
-                    <h3>Total 1500,-</h3>
+    
+            <div class="cart-card">
+                <img src="assets/products/RainyDays_Jacket5.jpg" alt="">
+                <div class="cart-card-info">
+                    <h3 class="card-header">FleeceYouUp</h3>
+                    <p>
+                        This fleece will keep you warm when its freezing
+                    </p>
+                    <p>Nok 1500,-</p>
+                    <div>
+                        <div class="circle circle-1"></div> 
+                        <p>010 - Army green</p>
+                    </div>
+                    <div class="add-more">
+                        <h4>Total 1500,-</h4>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="shipment-info">
-            <h2>Shipment information</h2>
-            <section>
-                <div class="process ordered">Ordered</div>
-                <div class="process processing">Processing</div>
-                <div class="process shipped">Shipped</div>
-                <div class="process delivered">Delivered</div>
+            <h3>Shipment information</h3>
+            <section class="process">
+                <div class="process-ordered">Ordered</div>
+                <div class="process-processing">Processing</div>
+                <div class="process-shipped">Shipped</div>
+                <div class="process-delivered">Delivered</div>
             </section>
+
             <section>
                 <h3>
                     Shipment adress
@@ -130,13 +142,17 @@
                 <p>Phone number</p>
                 <p>Email-adress</p>
             </section>
-            <section>
-                <h3>Payment information</h3>
-                <img src="" alt="">
-                <p>xxxx xxxx xxxx 6734</p>
+
+            <section class="payment-information">
+                <h4>Payment information</h4>
+                <div class="payment-information-card">
+                    <p><i class="fa-brands fa-cc-mastercard fa-xl"></i></p>
+                    <p>xxxx xxxx xxxx 6734</p>
+                </div>
             </section>
-            <section>
-                <h2>Summary</h2>
+
+            <section class="order-summary">
+                <h3>Order summary</h3>
                 <div class="payment-in-cart">
                     <p>Items (2)</p>
                     <p>3000,-</p>
@@ -154,111 +170,126 @@
             </section>
         </section>
 
-        <section class="carousel">
-            <h2>Others also veiwed</h2>
-            <div class="cards">
-                <div class="carousel-card-1">
-                    <img src="#" alt="">
-                    <div>
-                        <h3>DrizzleDrape</h3>
-                        <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
-                    </div>
-                    <p>Lightweight and chic, perfect for those unexpected showers.</p>
-                    <h4>Nok 1500,-</h4>
-                    <div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>+</div>
-                    </div>
-                    <button class="see-more">See more</button>
+        <h3 class="others-bought">Others also bought</h3>
+        <section class="fake-carousel">
+            <div class="jacket-card-1">
+                <img src="/assets/products/RainyDays_Jacket5.jpg" alt="" class="product-image">
+                <div class="line-1">
+                    <h3>DrizzleDrape</h3>
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <div class="carousel-card-2">
-                    <img src="#" alt="">
-                    <div>
-                        <h3>DrizzleDrape</h3>
-                        <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
-                    </div>
-                    <p>Lightweight and chic, perfect for those unexpected showers.</p>
-                    <h4>Nok 1500,-</h4>
-                    <div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>+</div>
-                    </div>
-                    <button class="see-more">See more</button>
+                <p>Lightweight and chic, perfect for those unexpected showers.</p>
+                <h4>Nok 1500,-</h4>
+                <div class="color-swatch">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div>+</div>
                 </div>
-                <div class="carousel-card-3">
-                    <img src="#" alt="">
-                    <div>
-                        <h3>DrizzleDrape</h3>
-                        <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
-                    </div>
-                    <p>Lightweight and chic, perfect for those unexpected showers.</p>
-                    <h4>Nok 1500,-</h4>
-                    <div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>+</div>
-                    </div>
-                    <button class="see-more">See more</button>
+                <form action="/products.html">
+                    <button type="submit" class="see-more">See more</button>
+                </form>
+            </div>
+
+            <div class="jacket-card-2">
+                <img src="/assets/products/RainyDays_Jacket6.jpg" alt="" class="product-image">
+                <div class="line-1">
+                    <h3>DrizzleDrape</h3>
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <div class="carousel-card-4">
-                    <img src="#" alt="">
-                    <div>
-                        <h3>DrizzleDrape</h3>
-                        <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
-                    </div>
-                    <p>Lightweight and chic, perfect for those unexpected showers.</p>
-                    <h4>Nok 1500,-</h4>
-                    <div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>+</div>
-                    </div>
-                    <button class="see-more">See more</button>
+                <p>Lightweight and chic, perfect for those unexpected showers.</p>
+                <h4>Nok 1500,-</h4>
+                <div class="color-swatch">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div>+</div>
                 </div>
-                <div class="carousel-card-5">
-                    <img src="#" alt="">
-                    <div>
-                        <h3>DrizzleDrape</h3>
-                        <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
-                    </div>
-                    <p>Lightweight and chic, perfect for those unexpected showers.</p>
-                    <h4>Nok 1500,-</h4>
-                    <div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>+</div>
-                    </div>
-                    <button class="see-more">See more</button>
+                <form action="/products.html">
+                    <button type="submit" class="see-more">See more</button>
+                </form>
+            </div>
+
+            <div class="jacket-card-3">
+                <img src="/assets/products/RainyDays_Jacket3.jpg" alt="" class="product-image">
+                <div class="line-1">
+                    <h3>DrizzleDrape</h3>
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
                 </div>
-                <div class="carousel-card-6">
-                    <img src="#" alt="">
-                    <div>
-                        <h3>DrizzleDrape</h3>
-                        <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
-                    </div>
-                    <p>Lightweight and chic, perfect for those unexpected showers.</p>
-                    <h4>Nok 1500,-</h4>
-                    <div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>circle</div>
-                        <div>+</div>
-                    </div>
-                    <button class="see-more">See more</button>
+                <p>Lightweight and chic, perfect for those unexpected showers.</p>
+                <h4>Nok 1500,-</h4>
+                <div class="color-swatch">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div>+</div>
                 </div>
+                <form action="/products.html">
+                    <button type="submit" class="see-more">See more</button>
+                </form>
+            </div>
+
+            <div class="jacket-card-4">
+                <img src="/assets/products/RainyDays_Jacket5.jpg" alt="" class="product-image">
+                <div class="line-1">
+                    <h3>DrizzleDrape</h3>
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <p>Lightweight and chic, perfect for those unexpected showers.</p>
+                <h4>Nok 1500,-</h4>
+                <div class="color-swatch">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div>+</div>
+                </div>
+                <form action="/products.html">
+                    <button type="submit" class="see-more">See more</button>
+                </form>
+            </div>
+
+            <div class="jacket-card-5">
+                <img src="/assets/products/RainyDays_Jacket4.jpg" alt="" class="product-image">
+                <div class="line-1">
+                    <h3>DrizzleDrape</h3>
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <p>Lightweight and chic, perfect for those unexpected showers.</p>
+                <h4>Nok 1500,-</h4>
+                <div class="color-swatch">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div>+</div>
+                </div>
+                <form action="/products.html">
+                    <button type="submit" class="see-more">See more</button>
+                </form>
+            </div>
+
+            <div class="jacket-card-6">
+                <img src="/assets/products/RainyDays_Jacket1.jpg" alt="" class="product-image">
+                <div class="line-1">
+                    <h3>DrizzleDrape</h3>
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+                </div>
+                <p>Lightweight and chic, perfect for those unexpected showers.</p>
+                <h4>Nok 1500,-</h4>
+                <div class="color-swatch">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                    <div>+</div>
+                </div>
+                <form action="/products.html">
+                    <button type="submit" class="see-more">See more</button>
+                </form>
             </div>
         </section>
     </main> 

@@ -1,9 +1,23 @@
+main {
+    margin: 8px;
+}
+
 nav {
     grid-area: nav;
 }
 
 h1, h2, h3, p {
     margin: 0;
+}
+
+h1, h2, h3, .payment-in-cart, .payment-total, .purchase-button {
+    font-family: var(--heading);
+    font-weight: 600;
+
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 .shopping-cart {
@@ -13,25 +27,88 @@ h1, h2, h3, p {
 .cart-card {
     border-bottom: 1px solid var(--blackish);
     display: flex;
+    gap: 8px;
     /* flex-direction: column; */
 }
 
 .cart-card img {
     height: 168px;
+    margin: auto;
+}
+
+.cart-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 8px;
+}
+
+.add-more {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .add-more button {
     height: 16px;
     width: 16px;
-    border-radius: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue-shopping {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--blackish);
+    padding-bottom: 8px;
+}
+
+.continue-shopping h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
 .fake-carousel-container {
     grid-area: carousel;
 }
 
-.payment{
+.payment-summary {
     grid-area: payment;
+    max-width: 360px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.summary {
+    margin: 8px 0;
+}
+
+.payment-total, .payment-delivery, .payment-in-cart {
+    display: flex;
+    justify-content: space-between
+}
+
+.payment-options {
+    max-width: 360px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.payment-option {
+    background-color: var(--tertiary);
+    border-radius: 8px;
+    height: 35px;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form {
@@ -52,7 +129,9 @@ form input {
 
 form .purchase-button {
     height: 40px;
-    width: 360px;
+    max-width: 360px;
+    font-size: 20px;
+    letter-spacing: 2.2px;
 }
 
 .jacket-card-1, .jacket-card-2, .jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
@@ -72,19 +151,24 @@ footer {
 
 /* Small (sm) */
 @media (min-width: 640px) {
+    main {
+        margin: 16px;
+    }
+    
     .carousel-card-3 {
         display: block;
     }
+
     .carousel-card-4, .carousel-card-5, .carousel-card-6 {
         display: none;
     }
-
 }
 
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
     main {
+        margin: 35px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: auto;
@@ -104,6 +188,10 @@ footer {
 /* Large (lg) */
 @media (min-width: 1024px) {
     /* Your styles for the large breakpoint here */
+    main {
+        margin: 70px;
+    }
+
     .jacket-card-4 {
         display: flex;
     }
@@ -115,10 +203,4 @@ footer {
     .jacket-card-5, .jacket-card-6 {
         display: flex;
     }
-}
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-    /* Your styles for the 2XL breakpoint here */
-
 }

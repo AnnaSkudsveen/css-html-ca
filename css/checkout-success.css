@@ -1,46 +1,171 @@
-.carousel .cards{
-    display: flex;
-}
-
-.carousel-card-3, .carousel-card-4, .carousel-card-5, .carousel-card-6 {
-    display: none;
-}
-
 nav {
     grid-area: nav;
 }
 
-.product {
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.thank-you {
+    grid-area: thank-you;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 24px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.shopping-cart {
     grid-area: product;
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 8px;
 }
 
-.carousel {
-    grid-area: carousel;
+.cart-card {
+    border-bottom: 1px solid var(--blackish);
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    /* flex-direction: column; */
 }
 
-.shipment-info{
+.cart-card img {
+    height: 168px;
+    margin: auto;
+}
+
+.cart-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 8px;
+}
+
+.add-more {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.process {
+    display: flex;
+    justify-content: space-between;
+}
+
+.process-ordered, .process-processing, .process-shipped, .process-delivered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77px;
+    height: 32px;
+    border-radius: 16px;
+    font-size: 12px;
+}
+
+.process-ordered {
+    background-color: var(--cta-primary);
+    color: var(--white);
+}
+
+.process-processing, .process-shipped, .process-delivered {
+    background-color: var(--cta-tertiary);
+}
+
+.payment-information {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.payment-information-card {
+    display: flex;
+    gap: 16px;
+}
+
+.shipment-info {
     grid-area: payment;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: var(--tertiary);
+    border-radius: var(--border-radius);
+    max-width: 360px;
+    padding: 16px;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.payment-in-cart, .payment-delivery, .payment-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-total p {
+    font-family: var(--heading);
+    font-weight: 600;
+}
+
+.others-bought {
+    grid-area: carousel-heading;
+    margin: 8px;
+    font-size: 32px;
+}
+
+.fake-carousel {
+    grid-area: carousel;
 }
 
 footer {
     grid-area: footer;
 }
 
+.jacket-card-1, .jacket-card-2, .jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* margin: 20px; */
+}
+
+.jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
+    display: none;
+}
+
+
 /* Small (sm) */
 @media (min-width: 640px) {
-    .carousel-card-3 {
-        display: block;
+    .shopping-cart, .others-bought {
+        margin-left: 16px;
     }
-    .carousel-card-4, .carousel-card-5, .carousel-card-6 {
-        display: none;
-    }
-
 }
 
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
+    .jacket-card-3 {
+        display: flex;
+    }
 
+    .shopping-cart, .others-bought {
+        margin-left: 20px;
+    }
+
+    .shipment-info {
+        min-width: 360px;
+    }
 }
 
 /* Large (lg) */
@@ -51,36 +176,43 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
         "nav nav"
+        "thank-you thank-you"
         "product payment"
+        "carousel-heading carousel-heading"
         "carousel carousel"
         "footer footer"
         ;
     }
-    .carousel-card-4 {
-        display: block;
+
+    .thank-you {
+        flex-direction: row;
+        gap: 32px;
     }
 
-    .carousel-card-5, .carousel-card-6 {
-        display: none;
+    .shopping-cart, .others-bought {
+        margin-left: 35px;
     }
+
+    .jacket-card-4 {
+        display: flex;
+    }
+
 }
 
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
-    .carousel-card-5 {
-        display: block;
+    .jacket-card-5, .jacket-card-6 {
+        display: flex;
     }
 
-    .carousel-card-6 {
-        display: none;
+    .shopping-cart, .others-bought {
+        margin-left: 70px;
     }
 }
 
 /* 2XL (2xl) */
 @media (min-width: 1536px) {
     /* Your styles for the 2XL breakpoint here */
-    .carousel-card-6 {
-        display: block;
-    }
+
 }
