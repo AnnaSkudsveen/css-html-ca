@@ -54,6 +54,7 @@ p {
 
 .popular-now-heading {
     padding: 20px;
+    padding-top: 0;
 }
 
 .jacket-card-1, .jacket-card-2, .jacket-card-3, .jacket-card-4, .jacket-card-5, .jacket-card-6 {
@@ -71,6 +72,10 @@ p {
     height: 596px;
     display: flex;
     flex-direction: column;
+}
+
+.categories h2 {
+    padding-left: 8px;
 }
 
 .categories-links {
@@ -139,6 +144,10 @@ p {
         background-size: cover;
     }
 
+    .categories h2 {
+        padding-left: 16px;
+    }
+
     .canoeing {
         display: block;
     }   
@@ -152,6 +161,10 @@ p {
     /* Your styles for the medium breakpoint here */
     .jacket-card-3 {
         display: flex;
+    }
+
+    .categories h2 {
+        padding-left: 20px;
     }
 }
 
@@ -178,7 +191,7 @@ p {
         display: block;
     }
 
-    .hero-banner-btns, .hero-banner h2 {
+    .hero-banner-btns, .hero-banner h2, .categories h2 {
         left: 70px;
     }
 
