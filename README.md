@@ -11,11 +11,11 @@ This was a course assignment for a HTML and CSS course.
 https://css-html-ca.vercel.app/
 
 ### Problems and struggles
-I really struggled with getting te navbar to look correct, and then I struggled with making it sit on top of the hero-banner. And the sticky position only works so far down the site.
+I really struggled with getting the navbar to look correct, and I struggled with making it sit on top of the hero-banner. And the sticky position only works so far down the site.
 
-### Learning outcomes
-I finally figured out different ways of getting images to scale properly and to get them positioned where I wanted them.
-I found that I learned a lot in the course that I just needed to hammer down to get it to stick, so this was a great way to make everything stick.
+### Learning outcomes - Stack
+HTML
+CSS
 
 ### Looking forward to
 Learning Javascript. I really look forward to see how I can make a couple of these things actully work, as well as a better way of making a navbar
